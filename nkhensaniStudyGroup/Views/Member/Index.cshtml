@@ -5,19 +5,22 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
 <h1>STUDY GROUP MEMBERS</h1>
-<table>
+
+
+<table style="border: 1px solid black">
     <tr>
-        <th>
+        <th style="border: 1px solid black">
             @Html.DisplayNameFor(model => model.StdNumber)
         </th>
-        <th>
+        <th style="border: 1px solid black">
             @Html.DisplayNameFor(model => model.StdName)
         </th>
-        <th>
+        <th style="border: 1px solid black">
             @Html.DisplayNameFor(model => model.StdSurname)
         </th>
-        <th>
+        <th style="border: 1px solid black">
             @Html.DisplayNameFor(model => model.StdEmail)
         </th>
     </tr>
@@ -25,16 +28,16 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>
+            <td style="border: 1px solid black">
                 @Html.DisplayFor(modelItem => item.StdNumber)
             </td>
-            <td>
+            <td style="border: 1px solid black">
                 @Html.DisplayFor(modelItem => item.StdName)
             </td>
-            <td>
+            <td style="border: 1px solid black">
                 @Html.DisplayFor(modelItem => item.StdSurname)
             </td>
-            <td>
+            <td style="border: 1px solid black">
                 @Html.DisplayFor(modelItem => item.StdEmail)
             </td>
         </tr>
