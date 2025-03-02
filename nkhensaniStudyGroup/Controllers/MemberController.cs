@@ -22,7 +22,7 @@ namespace nkhensaniStudyGroup.Controllers
         // GET: Member
         public ActionResult Index()
         {
-            return View();
+            return View(memberList);
         }
     }
 }
