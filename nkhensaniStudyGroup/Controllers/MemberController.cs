@@ -23,6 +23,6 @@ namespace nkhensaniStudyGroup.Controllers
         public ActionResult Index()
         {
             return View(memberList);
-        }
+        }   
     }
 }
