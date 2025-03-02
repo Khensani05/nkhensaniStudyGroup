@@ -7,7 +7,7 @@ namespace nkhensaniStudyGroup.Models
 {
 	public class Member
 	{
-		public int StdNumber { get; set; }
+		public string StdNumber { get; set; }
 		public string StdName { get; set; }
         public string StdSurname { get; set; }
 
