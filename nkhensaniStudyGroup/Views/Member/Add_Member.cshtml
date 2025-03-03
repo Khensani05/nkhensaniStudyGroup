@@ -23,6 +23,10 @@
     </div>
     <div>
         <label>Student Email Address:</label>
-        @Html.TextBoxFor(model => model.StdEmail, new { required = "required" })
+        @Html.TextBoxFor(model => model.StdEmail, new { required = "required", type = "email"})
     </div>
+
+    <button type="submit">Enter</button>
+
+    <p>@Html.ActionLink("Show List", "Index")</p>
 }

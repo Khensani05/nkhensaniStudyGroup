@@ -24,5 +24,23 @@ namespace nkhensaniStudyGroup.Controllers
         {
             return View(memberList);
         }   
+
+        public ActionResult Add_Member()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Add_Member(Member newMember)
+        {
+            if (ModelState.IsValid)
+            {
+                memberList.Add(newMember);
+                return RedirectToAction("Index");
+            }
+            return View(newMember);
+        }
     }
+
+
 }
