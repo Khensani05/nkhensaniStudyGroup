@@ -1,0 +1,28 @@
+﻿@model nkhensaniStudyGroup.Models.Member
+
+@{
+    ViewBag.Title = "Add_Member";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add_Member</h2>
+
+@using (Html.BeginForm("Create", "Member", FormMethod.Post))
+{
+    <div>
+        <label>Student Number:</label>
+        @Html.TextBoxFor(model => model.StdNumber, new {required = "required"})
+    </div>
+    <div>
+        <label>Student Name:</label>
+        @Html.TextBoxFor(model => model.StdName, new { required = "required" })
+    </div>
+    <div>
+        <label>Student Surname:</label>
+        @Html.TextBoxFor(model => model.StdSurname, new { required = "required" })
+    </div>
+    <div>
+        <label>Student Email Address:</label>
+        @Html.TextBoxFor(model => model.StdEmail, new { required = "required" })
+    </div>
+}
